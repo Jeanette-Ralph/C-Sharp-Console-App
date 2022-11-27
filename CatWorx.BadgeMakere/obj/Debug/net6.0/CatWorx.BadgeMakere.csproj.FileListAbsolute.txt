@@ -1,0 +1,15 @@
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/bin/Debug/net6.0/CatWorx.BadgeMakere
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/bin/Debug/net6.0/CatWorx.BadgeMakere.deps.json
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/bin/Debug/net6.0/CatWorx.BadgeMakere.runtimeconfig.json
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/bin/Debug/net6.0/CatWorx.BadgeMakere.dll
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/bin/Debug/net6.0/CatWorx.BadgeMakere.pdb
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.csproj.AssemblyReference.cache
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.AssemblyInfoInputs.cache
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.AssemblyInfo.cs
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.csproj.CoreCompileInputs.cache
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.dll
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/refint/CatWorx.BadgeMakere.dll
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.pdb
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/CatWorx.BadgeMakere.genruntimeconfig.cache
+/Users/jeanetteralph/Desktop/C-Sharp-Console-App/CatWorx.BadgeMakere/obj/Debug/net6.0/ref/CatWorx.BadgeMakere.dll
