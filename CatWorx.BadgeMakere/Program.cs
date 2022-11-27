@@ -10,16 +10,30 @@ namespace CatWorx.BadgeMaker
         // static --> means scope is at the class level
         static void Main(string[] args) // entry point
         {
-            List<string> employees = new List<string>() { "adam", "amy" };
+            List<string> employees = new List<string>();
 
-            employees.Add("barbara");
-            employees.Add("billy");
-            Console.WriteLine("My employees include {0}, {1}, {2}, {3}", employees[0], employees[1], employees[2], employees[3]);
+            // collect user values until the value is an empty string
 
+            while (true)
+            {
+                Console.WriteLine("Please enter a namee:");
+
+                // get a name from the console and assign it to a variable
+                string input = Console.ReadLine() ?? "";
+
+                // break out of loop if user doesnt enter a name
+                if (input == "")
+                {
+                    break;
+                }
+                employees.Add(input);
+
+            }
             for (int i = 0; i < employees.Count; i++)
             {
                 Console.WriteLine(employees[i]);
             }
+
         }
     }
 }
