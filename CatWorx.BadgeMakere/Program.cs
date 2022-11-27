@@ -10,26 +10,16 @@ namespace CatWorx.BadgeMaker
         // static --> means scope is at the class level
         static void Main(string[] args) // entry point
         {
-            Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
-            myScoreBoard.Add("firstInning", 10);
-            myScoreBoard.Add("secondInning", 20);
-            myScoreBoard.Add("thirdInning", 30);
-            myScoreBoard.Add("fourthInning", 40);
-            myScoreBoard.Add("fifthInning", 50);
+            List<string> employees = new List<string>() { "adam", "amy" };
 
-            Console.WriteLine("----------------");
-            Console.WriteLine("  Scoreboard");
-            Console.WriteLine("----------------");
-            Console.WriteLine("Inning |  Score");
-            Console.WriteLine("   1   |    {0}", myScoreBoard["firstInning"]);
-            Console.WriteLine("   2   |    {0}", myScoreBoard["secondInning"]);
-            Console.WriteLine("   3   |    {0}", myScoreBoard["thirdInning"]);
-            Console.WriteLine("   4   |    {0}", myScoreBoard["fourthInning"]);
-            Console.WriteLine("   5   |    {0}", myScoreBoard["fifthInning"]);
+            employees.Add("barbara");
+            employees.Add("billy");
+            Console.WriteLine("My employees include {0}, {1}, {2}, {3}", employees[0], employees[1], employees[2], employees[3]);
+
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i]);
+            }
         }
-
     }
 }
-
-
-
