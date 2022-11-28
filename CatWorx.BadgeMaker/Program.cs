@@ -11,32 +11,47 @@ namespace CatWorx.BadgeMaker
         static void Main(string[] args) // entry point
         {
             // getting employees
-            List<string> employees = GetEmployees();
+            List<Employee> employees = GetEmployees();
+            PrintEmployees(employees);
 
         }
 
-        static List<string> GetEmployees()
+        static List<Employee> GetEmployees()
         {
 
-            List<string> employees = new List<string>();
+            List<Employee> employees = new List<Employee>();
             // collect user values until the value is an empty string
 
             while (true)
             {
                 Console.WriteLine("Please enter a name: ");
 
-                // get a name from the console and assign it to a variable
-                string input = Console.ReadLine() ?? "";
+                // Move the initial prompt inside the loop, so it repeats for each employee
+                Console.WriteLine("Enter first name (leave empty to exit): ");
+
+                // change input to firstName
+                string firstName = Console.ReadLine() ?? "";
 
                 // break out of loop if user doesnt enter a name
-                if (input == "")
+                if (firstName == "")
                 {
                     break;
                 }
 
-                // create a new instance of employee
-                Employee currentEmployee = new Employee(input, "Smith");
-                employees.Add(currentEmployee.GetFullName());
+                // add a Console.ReadLine() for each value
+                Console.Write("Enter last name: ");
+                string lastName = Console.ReadLine() ?? "";
+
+                Console.Write("Enter ID: ");
+                int id = Int32.Parse(Console.ReadLine() ?? "");
+
+                Console.Write("Enter Photo URL:");
+                string photoUrl = Console.ReadLine() ?? "";
+
+                Employee currentEmployee = new Employee(firstName, lastName, id, photoUrl);
+                employees.Add(currentEmployee);
+
+
 
             }
 
@@ -44,11 +59,13 @@ namespace CatWorx.BadgeMaker
         }
 
         // if not returning anything then it must have a "void" return type
-        static void PrintEmployees(List<string> employees)
+        static void PrintEmployees(List<Employee> employees)
         {
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees[i]);
+                // each item in employees is now a new instance of Employee
+                string template = "{0,-10}\t{1,-20}\t{2}";
+                Console.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetFullName(), employees[i].GetPhotoUrl()));
             }
         }
     }
