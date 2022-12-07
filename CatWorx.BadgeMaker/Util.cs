@@ -1,5 +1,6 @@
 // import correct packages
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 // NOTES // 
@@ -23,5 +24,14 @@ namespace CatWorx.BadgeMaker
             }
         }
 
+        public static void MakeCSV(List<Employee> employees)
+        {
+            // check to see if data folder exsists
+            if (!Directory.Exists("data"))
+            {
+                // create the database if it does not exist
+                Directory.CreateDirectory("data");
+            }
+        }
     }
 }
