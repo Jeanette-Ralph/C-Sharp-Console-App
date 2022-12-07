@@ -55,8 +55,5 @@ namespace CatWorx.BadgeMaker
 
             return employees;
         }
-
-
     }
-
 }
